@@ -3,6 +3,12 @@
 <b>This tool allows to bypass Microsoft's AMSI interface (Windows Defender base) by going through <a href="https://www.microsoft.com/en-us/research/project/detours/">Microsoft Detours</a> in order to intercept and hijack the function calls that emanate from it, so as to launch an undetectable reverse shell and take control of the victim's machine.
 This is obviously only a POC and this tool/method can be extended to an infinite number of possibilities.</b>
 
+<h3> Usage : </h3>
+
+```
+Loader.exe <PID> <PATH_TO_CUSTOM_DLL>
+```
+
 <h3> Injection on notepad.exe & Reverse shell : </h3>
 <img src="rs.gif">
 
