@@ -56,34 +56,6 @@ LPWSTR charToLPWSTR(const char* str) {
     return wstr;
 }
 
-int GetPIDByName(const std::wstring& processName)
-{
-    PROCESSENTRY32 processEntry;
-    processEntry.dwSize = sizeof(PROCESSENTRY32);
-
-    HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, NULL);
-    if (snapshot == INVALID_HANDLE_VALUE)
-    {
-        return 0;
-    }
-
-    int pid = 0;
-    if (Process32First(snapshot, &processEntry))
-    {
-        do
-        {
-            std::wstring currentProcessName(processEntry.szExeFile);
-            if (currentProcessName == processName)
-            {
-                pid = processEntry.th32ProcessID;
-                break;
-            }
-        } while (Process32Next(snapshot, &processEntry));
-    }
-
-    CloseHandle(snapshot);
-    return pid;
-}
 
 BOOL APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,
