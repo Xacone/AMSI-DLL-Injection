@@ -27,7 +27,7 @@ Loader.exe <PID> <PATH_TO_CUSTOM_DLL>
 Crafted module loaded among the others : <br>
 <img width="70%" src="https://i.ibb.co/z6hyWff/image.png">
 
-<b><i>Sources : </i><br>
+<b><i>References : </i><br>
 <a href="https://x64sec.sh/understanding-and-bypassing-amsi/">Understanding and bypassing AMSI</a><br>
 <a href="https://github.com/microsoft/Detours/wiki/OverviewInterception">OverviewInterception</a><br>
 <a href="https://github.com/microsoft/Detours">Microsoft Detours Package</a><br>
