@@ -21,7 +21,7 @@ Loader.exe <PID> <PATH_TO_CUSTOM_DLL>
 <h3> Normal Scenario : </h3>
 <img width="60%" src="https://i.ibb.co/wczdjVH/image.png">
 
-<h3> DLL injection through & AMSI bypassing through Detours : </h3>
+<h3> DLL injection & AMSI bypassing through Detours : </h3>
 <img src="https://i.ibb.co/S7ckJB6/amsi-1.png">
 
 Crafted module loaded among the others : <br>
